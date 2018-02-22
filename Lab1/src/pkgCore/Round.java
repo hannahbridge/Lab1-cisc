@@ -22,7 +22,7 @@ public class Round
 		{
 			this.eGameResult =  pkgCore.eGameResult.NATURAL;
 		}
-		else if(ComeOutScore == 2 || ComeOutScore == 3 || ComeOutScore == 12) 
+		if(ComeOutScore == 2 || ComeOutScore == 3 || ComeOutScore == 12) 
 		{
 			this.eGameResult = pkgCore.eGameResult.CRAPS;
 		}
@@ -43,7 +43,7 @@ public class Round
 					{
 						this.eGameResult = pkgCore.eGameResult.POINT;
 					}
-					else if(nextRoll.getScore() == 7)
+					if(nextRoll.getScore() == 7)
 					{
 						this.eGameResult = pkgCore.eGameResult.SEVEN_OUT;
 						isPointOrSevenOut = true;
