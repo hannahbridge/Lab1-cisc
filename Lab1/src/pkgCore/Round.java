@@ -33,7 +33,6 @@ public class Round
 		boolean isPointOrSevenOut = false;
 		Roll nextRoll;
 		
-		// while(!(contains(natural, ComeOutScore) && !(contains(craps, ComeOutScore) && isPointOrSevenOut == false)))
 		if(ComeOutScore == 4 || ComeOutScore == 5 || ComeOutScore == 6 || ComeOutScore == 8 || ComeOutScore == 9 || ComeOutScore == 10)
 		{
 			while(isPointOrSevenOut == false)
