@@ -5,7 +5,7 @@ import java.util.LinkedList;
 public class Round 
 {
 
-	private int ComeOutScore;
+	private byte ComeOutScore;
 	@SuppressWarnings("unused")
 	private eGameResult eGameResult;
 	private LinkedList<Roll> rolls = new LinkedList<Roll>();

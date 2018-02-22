@@ -4,7 +4,7 @@ public class Roll
 {
 	private Die d1;
 	private Die d2;
-	private int Score;
+	private byte Score;
 
 	public Roll() 
 	{
@@ -13,10 +13,10 @@ public class Roll
 		d2 = new Die();
 		
 		// TODO: Determine 'Score'
-		Score = (int) (d1.getDieValue() + d2.getDieValue());
+		Score = (byte) (d1.getDieValue() + d2.getDieValue());
 	}
 
-	public int getScore() 
+	public byte getScore() 
 	{
 		return Score;
 	}

@@ -3,17 +3,17 @@ package pkgCore;
 public class Die 
 {
 
-	private int DieValue;
+	private byte DieValue;
 
 	public Die() 
 	{
 		// TODO: Determine DieValue.. a random number between 1 and 6
 		
-		DieValue = (int) ((Math.random() * 6) + 1);
+		DieValue = (byte) ((Math.random() * 6) + 1);
 		
 	}
 	
-	public int getDieValue() 
+	public byte getDieValue() 
 	{
 		return DieValue;
 	}
