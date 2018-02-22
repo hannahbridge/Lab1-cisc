@@ -13,6 +13,7 @@ public class Roll
 		d2 = new Die();
 		
 		// TODO: Determine 'Score'
+		// add d1 and d2
 		Score = (byte) (d1.getDieValue() + d2.getDieValue());
 	}
 

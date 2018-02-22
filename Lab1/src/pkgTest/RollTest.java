@@ -15,6 +15,7 @@ public class RollTest
 		{
 			Roll r = new Roll();
 			// TODO: Make sure value of roll is between 1 and 12.
+			// array - includes possible roll values (score)
 			int[] rollValues = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12};
 			assertEquals(rollValues, r.getScore());
 		}

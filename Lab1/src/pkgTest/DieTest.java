@@ -15,6 +15,7 @@ public class DieTest
 		{
 			Die d = new Die();
 			// TODO: Make sure value of die is between 1 and 6.
+			// array - includes possible die values
 			int[] dieValues = {1, 2, 3, 4, 5, 6};
 			assertEquals(dieValues, d.getDieValue());
 		}

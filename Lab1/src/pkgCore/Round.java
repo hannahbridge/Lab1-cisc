@@ -1,5 +1,4 @@
 package pkgCore;
-
 import java.util.LinkedList;
 
 public class Round 
