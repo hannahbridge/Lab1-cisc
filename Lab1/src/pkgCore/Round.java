@@ -46,7 +46,7 @@ public class Round
 					}
 					if(nextRoll.getScore() == 7)
 					{
-						this.eGameResult = pkgCore.eGameResult.SEVEN_OUT;
+						eGameResult = eGameResult.SEVEN_OUT;
 						isPointOrSevenOut = true;
 					}
 				}
@@ -60,5 +60,28 @@ public class Round
 		// Return the roll count
 		return rolls.size();
 	}
+	public String displayRolls()
+	{
+		String stringRolls = new String();
+		for(Roll r : rolls)
+		{
+			stringRolls = stringRolls + r.getScore() + ' ';
+		}
+		
+		return stringRolls;
+	}
+	public int getFirstScore()
+	{
+		return rolls.getFirst().getScore();
+	}
+	public int getLastScore()
+	{
+		return rolls.getLast().getScore();
+	}
+	public eGameResult geteGameResult() 
+	{
+		return eGameResult;
+	}
+	
 
 }
