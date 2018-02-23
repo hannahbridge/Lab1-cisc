@@ -1,5 +1,6 @@
 package pkgTest;
 
+import static org.junit.Assert.*;
 import org.junit.Test;
 import pkgCore.Die;
 
@@ -12,7 +13,14 @@ public class DieTest
 		{
 			Die d = new Die();
 			// TODO: Make sure value of die is between 1 and 6.
-			assert d.getDieValue() == 1 || d.getDieValue() == 2 || d.getDieValue() == 3 || d.getDieValue() == 4 || d.getDieValue() == 5 || d.getDieValue() == 6;
+			if((d.getDieValue() > 0) && (d.getDieValue() < 7))
+			{
+				System.out.println("Test passed");
+			}
+			else
+			{
+				fail(d.getDieValue() + " must be between 1 and 6");
+			}
 		}
 	}
 
